@@ -8,13 +8,24 @@ var PlayerView = Backbone.View.extend({
   initialize: function() {
   },
 
+  events: {
+    'ended': 'playNextSong'
+  },
+
   setSong: function(song){
     this.model = song;
     this.render();
   },
 
+  playNextSong: function(){
+    this.model.ended();
+  },
+
   render: function(){
     return this.$el.attr('src', this.model ? this.model.get('url') : '');
+
+    // do we need to set a this.model.url to PlayerView?
+
   }
 
 });
