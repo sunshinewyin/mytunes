@@ -1,0 +1,14 @@
+html {
+  background: url("milky_way.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+th, tr, td {
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  font: bold 16px Arial, sans-serif;
+}
+
